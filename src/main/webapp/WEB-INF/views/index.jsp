@@ -13,7 +13,7 @@
 	
 	<!-- scriptlet tag -->
 	<%
-	String name = (String) request.getAttribute("name");/* httpsession se aai hai request */
+	String name = (String) request.getAttribute("name");/* request : objet of httpServletRequest */
 	Integer id = (Integer)request.getAttribute("id");
 	List<String> friends = (List<String>) request.getAttribute("f");
 	%>
