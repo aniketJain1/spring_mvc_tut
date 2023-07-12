@@ -23,25 +23,26 @@
 	<div class="container mt-5">
 	
 	<h3 class="text-center">Registration Form </h3>
-
-		<form action="/processform" method="post">
+	
+						<!-- Address, relative url, not absolute url-->
+		<form action="processform" method="post">
 			<div class="mb-3">
 				<label for="exampleInputEmail1" class="form-label">Email
 					address</label> <input type="email" class="form-control"
 					id="exampleInputEmail1" aria-describedby="emailHelp"
-					placeholder="Enter here">
+					placeholder="Enter here" name="email">
 				<div id="emailHelp" class="form-text">We'll never share your
 					email with anyone else.</div>
 			</div>
 			<div class="mb-3">
 				<label for="userName" class="form-label">User Name </label> <input
 					type="userName" class="form-control" id="userName"
-					aria-describedby="emailHelp" placeholder="Enter here">
+					aria-describedby="emailHelp" placeholder="Enter here" name="userName">
 			</div>
 			<div class="mb-3">
 				<label for="password" class="form-label">Password </label> <input
 					type="password" class="form-control" id="password"
-					aria-describedby="emailHelp" placeholder="Enter here">
+					aria-describedby="emailHelp" placeholder="Enter here" name="password">
 			</div>
 			<div class="container text-center">
 				<button type="submit" class="btn btn-success">Sign Up</button>
