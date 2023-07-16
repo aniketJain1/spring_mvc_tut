@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	
+	<!-- For enabling expression language -->
+<%@page isELIgnored="false" %>
+	
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,7 +26,9 @@
 
 	<div class="container mt-5">
 	
-	<h3 class="text-center">Registration Form </h3>
+	<h3 class="text-center">${Header} </h3>
+	<h5 class="text-center">${Desc}</h5>
+	<br>
 	
 						<!-- Address, relative url, not absolute url-->
 		<form action="processform" method="post">

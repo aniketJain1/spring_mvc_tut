@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 
-<%@page isELIgnored="false" %>
+<!-- for enable expression language -->
+<%@page isELIgnored="false"%>
 
 <!DOCTYPE html>
 <html>
@@ -11,8 +12,12 @@
 </head>
 <body>
 
-	<h1>Welcome, ${name }</h1>
-	<h1>Your email address is ${email }</h1>
-	<h1>Your password is ${password } try to secure the password</h1>
+	<h3 class="text-center">${Header}</h3>
+	<h5 class="text-center">${Desc}</h5>
+	<br>
+
+	<h1>Welcome, ${user.userName}</h1>
+	<h1>Your email address is ${user.email}</h1>
+	<h1>Your password is ${user.password} try to secure the password</h1>
 </body>
 </html>
